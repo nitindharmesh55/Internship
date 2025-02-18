@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes } from "react-router-dom"; // ✅ Fixed missing import
+import { BrowserRouter as Router, Routes } from "react-router-dom"; // ng import
 
 import { useFilter } from "./FilterContext";
 import { Tally3 } from "lucide-react";
@@ -27,7 +27,7 @@ const MainContent = () =>{
         
       })
       .catch((error) => {
-        console.error("Error Fetching the data", error); // ✅ Fixed error logging
+        console.error("Error Fetching the data", error); // 
       });
   }, [currentPage, keyword]);
 
